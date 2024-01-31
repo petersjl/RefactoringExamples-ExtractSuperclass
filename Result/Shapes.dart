@@ -1,16 +1,16 @@
 import 'dart:math';
 
 abstract class Shape {
+  int _sideLength;
 
+  Shape(this._sideLength);
 }
 
 class Triangle extends Shape {
-  int _sideLength;
-
   int get sideCount => 3;
   int get sideLength => _sideLength;
 
-  Triangle(this._sideLength);
+  Triangle(super._sideLength);
 
   int get perimeter => 
     sideCount * sideLength;
@@ -21,12 +21,10 @@ class Triangle extends Shape {
 }
 
 class Square extends Shape {
-  int _sideLength;
-
   int get sideCount => 4;
   int get sideLength => _sideLength;
 
-  Square(this._sideLength);
+  Square(super._sideLength);
 
   int get perimeter => 
     sideCount * sideLength;
@@ -37,12 +35,10 @@ class Square extends Shape {
 }
 
 class Hexagon extends Shape {
-  int _sideLength;
-
   int get sideCount => 6;
   int get sideLength => _sideLength;
 
-  Hexagon(this._sideLength);
+  Hexagon(super._sideLength);
 
   int get perimeter => 
     sideCount * sideLength;
