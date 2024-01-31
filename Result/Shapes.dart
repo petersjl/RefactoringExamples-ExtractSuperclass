@@ -4,6 +4,7 @@ abstract class Shape {
   int _sideLength;
 
   int get sideLength => _sideLength;
+  int get sideCount;
 
   Shape(this._sideLength);
 }
