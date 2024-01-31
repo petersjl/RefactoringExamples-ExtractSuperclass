@@ -11,11 +11,7 @@ class GardenCalculator {
     int perimeter = 0;
 
     for(var shape in _shapes){
-      switch(shape.runtimeType){
-        case Triangle: perimeter += (shape as Triangle).perimeter;
-        case Square: perimeter += (shape as Square).perimeter;
-        case Hexagon: perimeter += (shape as Hexagon).perimeter;
-      }
+      perimeter += shape.perimeter;
     }
 
     return perimeter;
