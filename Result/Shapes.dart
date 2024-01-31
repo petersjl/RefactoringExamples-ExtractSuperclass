@@ -10,6 +10,8 @@ abstract class Shape {
 
   int get perimeter => 
     sideCount * sideLength;
+
+  num get area;
 }
 
 class Triangle extends Shape {
