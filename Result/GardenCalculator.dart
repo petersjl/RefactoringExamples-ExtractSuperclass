@@ -1,11 +1,11 @@
 import 'Shapes.dart';
 
 class GardenCalculator {
-  List<dynamic> _shapes;
+  List<Shape> _shapes;
 
   GardenCalculator() : _shapes = List.empty(growable: true);
 
-  void addShape(dynamic shape) => _shapes.add(shape);
+  void addShape(Shape shape) => _shapes.add(shape);
 
   int calculateTotalPerimeter(){
     int perimeter = 0;
