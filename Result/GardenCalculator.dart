@@ -21,11 +21,7 @@ class GardenCalculator {
     double area = 0;
 
     for(var shape in _shapes){
-      switch(shape.runtimeType){
-        case Triangle: area += (shape as Triangle).area;
-        case Square: area += (shape as Square).area;
-        case Hexagon: area += (shape as Hexagon).area;
-      }
+      area += shape.area;
     }
 
     return area;
