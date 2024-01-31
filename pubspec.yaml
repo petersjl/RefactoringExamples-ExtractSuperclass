@@ -1,0 +1,6 @@
+name: ExtractSuperclass
+
+environment:
+  sdk: '>=3.0.0 <=3.2.1'
+dependencies:
+  test: ^1.25.2
