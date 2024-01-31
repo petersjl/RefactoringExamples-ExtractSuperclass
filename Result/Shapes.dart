@@ -1,6 +1,10 @@
 import 'dart:math';
 
-class Triangle {
+abstract class Shape {
+
+}
+
+class Triangle extends Shape {
   int _sideLength;
 
   int get sideCount => 3;
@@ -16,7 +20,7 @@ class Triangle {
   }
 }
 
-class Square {
+class Square extends Shape {
   int _sideLength;
 
   int get sideCount => 4;
@@ -32,7 +36,7 @@ class Square {
   }
 }
 
-class Hexagon {
+class Hexagon extends Shape {
   int _sideLength;
 
   int get sideCount => 6;
